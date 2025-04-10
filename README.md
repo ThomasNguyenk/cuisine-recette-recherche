@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# Cuisine Recette Recherche
 
-## Project info
+## Description
+Application web de recherche de recettes de cuisine utilisant l'API Spoonacular. Permet de trouver des recettes selon divers critères comme les ingrédients, régimes alimentaires ou restrictions.
 
-**URL**: https://lovable.dev/projects/1d47692b-9d9e-403a-ba0b-e686b60d06f9
+## Fonctionnalités principales
+- Recherche de recettes par ingrédients
+- Filtres pour régimes (végétarien, vegan, etc.)
+- Filtres pour restrictions (sans gluten, etc.)
+- Détails complets des recettes
+- Gestion des favoris
 
-## How can I edit this code?
+## Technologies
+- Frontend : React.js
+- API : Spoonacular
+- Gestion d'état : Context API
+- Styling : Sass
+- Build : Vite
 
-There are several ways of editing your application.
+## Installation
 
-**Use Lovable**
+### Prérequis
+- Node.js v16+
+- npm ou yarn
+- Clé API Spoonacular
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1d47692b-9d9e-403a-ba0b-e686b60d06f9) and start prompting.
+### Commandes d'installation
+1. Cloner le dépôt :
+git clone https://github.com/ThomasNguyenk/cuisine-recette-recherche.git
+cd cuisine-recette-recherche
 
-Changes made via Lovable will be committed automatically to this repo.
+2. Installer les dépendances :
+npm install
+ou
+yarn install
 
-**Use your preferred IDE**
+3. Configurer l'API :
+Créez un fichier .env contenant :
+VITE_SPOONACULAR_API_KEY=votre_clé_api
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Lancer l'application :
 npm run dev
-```
+ou
+yarn dev
 
-**Edit a file directly in GitHub**
+L'application sera disponible sur http://localhost:5173
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Structure des fichiers
+cuisine-recette-recherche/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── pages/
+│   ├── styles/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env.example
+├── .gitignore
+├── package.json
+└── vite.config.js
 
-**Use GitHub Codespaces**
+## Scripts disponibles
+- dev : Mode développement
+- build : Build production
+- preview : Prévisualisation build
+- lint : Vérification code
+- format : Formatage code
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Comment contribuer
+1. Forker le projet
+2. Créer une branche (git checkout -b ma-fonctionnalite)
+3. Commiter les changements
+4. Pusher vers la branche
+5. Ouvrir une Pull Request
 
-## What technologies are used for this project?
+## Licence
+Projet sous licence MIT - voir le fichier LICENSE
 
-This project is built with:
+## Auteur
+Thomas Nguyen - GitHub: ThomasNguyenk
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1d47692b-9d9e-403a-ba0b-e686b60d06f9) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Remerciements
+- Spoonacular pour leur API
+- La communauté React
